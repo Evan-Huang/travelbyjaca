@@ -10,6 +10,8 @@ namespace App\Http\Controllers;
 
 use Log;
 
+use Overtrue\LaravelWechat\Events\WeChatUserAuthorized;
+
 class WechatController extends Controller
 {
 
@@ -30,5 +32,13 @@ class WechatController extends Controller
         Log::info('return response.');
 
         return $wechat->server->serve();
+    }
+
+    public function user()
+    {
+        $event = new WeChatUserAuthorized();
+        $user = $event->user;
+
+        dd($user);
     }
 }
