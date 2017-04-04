@@ -19,7 +19,7 @@ return [
     'app_id'  => env('WECHAT_APPID', 'wxc5ae5b77df68cd27'),         // AppID
     'secret'  => env('WECHAT_SECRET', 'ae1d92d686f51741097f3e05e82c72d6'),     // AppSecret
     'token'   => env('WECHAT_TOKEN', 'lMb8nTzCtAFi6j7IxOqJ'),          // Token
-    'aes_key' => env('WECHAT_AES_KEY', 'nid3YiQHqrPyHyA5ZN9rOmGynLWcBxCI1bDuEp6m14L'),                    // EncodingAESKey
+    'aes_key' => env('WECHAT_AES_KEY', 'ruQWAgtueNbUvpApFYjw1meMIyQKJWcIzxIGY3bSzmG'),                    // EncodingAESKey
 
     /**
      * 开放平台第三方平台配置信息
