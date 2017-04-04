@@ -36,8 +36,7 @@ class WechatController extends Controller
 
     public function user()
     {
-        $event = new WeChatUserAuthorized();
-        $user = $event->user;
+        $user = session('wechat.oauth_user'); // 拿到授权用户资料
 
         dd($user);
     }
