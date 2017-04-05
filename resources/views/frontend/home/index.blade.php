@@ -19,10 +19,12 @@
 @section('js')
     <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8">
-        {{--wx.config(<?php echo $js->config(array('onMenuShareAppMessage','onMenuShareQQ', 'onMenuShareWeibo'), true) ?>);--}}
+        wx.config(<?php echo $js->config(array('onMenuShareAppMessage','onMenuShareQQ', 'onMenuShareWeibo'), true) ?>);
         var fromuser = $('.fromuser').val();
         var sharepath = window.location.host+'/?fromuser='+ '<?php echo $user->getNickname() ?>';
+        alert(sharepath);
         var imgurl = '<?php echo $user->getAvatar() ?>';
+        alert(imgurl);
         wx.onMenuShareAppMessage({
             title: fromuser + '邀請你測試你倆適合不適合一起旅行', // 分享标题
             desc: '快來匹配你們的旅行偏好吧！', // 分享描述
@@ -39,5 +41,6 @@
                 alert('分享失敗！！！')
             }
         });
+        alert('成功！！！');
     </script>
 @stop
