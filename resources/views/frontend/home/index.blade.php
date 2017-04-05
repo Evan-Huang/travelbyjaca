@@ -19,7 +19,7 @@
 @section('js')
     <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8">
-        wx.config(<?php echo $js->config(array('onMenuShareQQ', 'onMenuShareWeibo'), true) ?>);
+        wx.config(<?php echo $js->config(array('onMenuShareAppMessage','onMenuShareQQ', 'onMenuShareWeibo'), true) ?>);
         var fromuser = $('.fromuser').val();
         var sharepath = window.location.host+'/?fromuser='+ '<?php echo $user->getNickname() ?>';
         var imgurl = '<?php echo $user->getAvatar() ?>';
