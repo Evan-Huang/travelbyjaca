@@ -1,0 +1,24 @@
+
+.home_bg {
+    max-width: 750px;
+    background-image: url(../images/bg.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (max-width:768px){
+    .home_bg{
+        width: 100%;
+        padding-top: 161.33%;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:320px){
+    .home_bg{
+        padding-top:220px;
+        background-size: cover;
+    }
+}
