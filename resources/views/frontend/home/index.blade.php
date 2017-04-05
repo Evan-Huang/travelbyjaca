@@ -22,11 +22,11 @@
         wx.config(<?php echo $js->config(array('onMenuShareAppMessage','onMenuShareQQ', 'onMenuShareWeibo'), false) ?>);
         var fromuser = $('.fromuser').val();
         var sharepath = window.location.host+'/home/?fromuser='+ '<?php echo $user->getNickname() ?>';
-        alert(sharepath);
+//        alert(sharepath);
         var imgurl = '<?php echo $user->getAvatar() ?>';
         var title = '<?php echo $user->getNickname() ?>' + '邀請你測試你倆適合不適合一起旅行';
         var desc = '快來匹配你們的旅行偏好吧！';
-        alert(imgurl);
+//        alert(imgurl);
         wx.ready(function(){
             // config信息验证后会执行ready方法，所有接口调用都必须在config接口获得结果之后，config是一个客户端的异步操作，所以如果需要在页面加载时就调用相关接口，则须把相关接口放在ready函数中调用来确保正确执行。对于用户触发时才调用的接口，则可以直接调用，不需要放在ready函数中。
             wx.onMenuShareAppMessage({
@@ -47,6 +47,6 @@
             });
         });
 
-        alert('成功！！！');
+//        alert('成功！！！');
     </script>
 @stop
