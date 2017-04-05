@@ -34,11 +34,4 @@ class WechatController extends Controller
         return $wechat->server->serve();
     }
 
-    public function user()
-    {
-        $user = session('wechat.oauth_user'); // 拿到授权用户资料
-
-//        dd($user);
-        return redirect('/home');
-    }
 }
