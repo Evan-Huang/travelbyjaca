@@ -21,7 +21,7 @@
     <script type="text/javascript" charset="utf-8">
         wx.config(<?php echo $js->config(array('onMenuShareAppMessage','onMenuShareQQ', 'onMenuShareWeibo'), true) ?>);
         var fromuser = $('.fromuser').val();
-        var sharepath = window.location.host+'/?fromuser='+ '<?php echo $user->getNickname() ?>';
+        var sharepath = window.location.host+'/home/?fromuser='+ '<?php echo $user->getNickname() ?>';
         alert(sharepath);
         var imgurl = '<?php echo $user->getAvatar() ?>';
         alert(imgurl);
