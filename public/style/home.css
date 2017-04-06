@@ -70,6 +70,7 @@
 
     .fromuser:after {
         content: '邀請你來測試';
+        color: #FFFFFF;;
     }
 
     .question1_bg {
