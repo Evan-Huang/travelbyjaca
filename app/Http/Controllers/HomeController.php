@@ -23,8 +23,10 @@ class HomeController extends Controller
         return view('frontend.home.index');
     }
 
-    public function demo(Application $wechat)
+    public function question(Request $request)
     {
-        // $wechat 则为容器中 EasyWeChat\Foundation\Application 的实例
+        if ($request->method() == 'GET' && $request->input('num')) {
+            return view('frontend.question.question' . $request->input('num'));
+        }
     }
 }
