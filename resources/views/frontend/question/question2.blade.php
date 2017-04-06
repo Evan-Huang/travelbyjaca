@@ -20,7 +20,7 @@
                         <input name="answer" type="radio" style="display: inline" class="pull-left"><p class="" style="padding-left: 20px;">只選貴的，哪家不重要</p>
                     </div>
 
-                    <a class="btn center-block" style="background-color: #563907;border-color: #563907;color: #f1ca88;margin-top: 20px;" href="#">下一題</a>
+                    <a class="btn center-block" style="background-color: #563907;border-color: #563907;color: #f1ca88;margin-top: 20px;" href="{{ url('/question?num=3') }}">下一題</a>
                 </div>
                 <div class="bottom_pic_2" style="position: absolute;bottom:0px;width: 100%;padding-top: 42%;left: 0;">
                     {{--<img src="{{ asset('images/question_pic_1.png') }}">--}}
