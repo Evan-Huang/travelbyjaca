@@ -41,4 +41,8 @@ class HomeController extends Controller
     public function testquestion2() {
         return view('frontend.question.question2');
     }
+
+    public function testquestion3() {
+        return view('frontend.question.question3');
+    }
 }

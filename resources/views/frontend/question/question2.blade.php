@@ -6,7 +6,7 @@
     <div class="container question2_bg">
         <div class="row">
             <div class="col-sm-12">
-                <div class="center" style="position: absolute;width: 250px;bottom:180px;left: 50%;margin-left: -125px;">
+                <div class="center" style="position: absolute;width: 280px;bottom:200px;left: 50%;margin-left: -140px;">
                     <div class="item">
                         <input name="answer" type="radio" style="display: inline" class="pull-left"><p class="" style="padding-left: 20px;">當然看哪個便宜選哪個</p>
                     </div>
