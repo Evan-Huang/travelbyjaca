@@ -7,6 +7,13 @@
     background-repeat: no-repeat;
 }
 
+.question1_bg {
+    max-width: 750px;
+    background-image: url(../images/question_bg_1.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 @media screen and (max-width:768px){
     .home_bg{
@@ -17,6 +24,12 @@
 
     .fromuser:after {
         content: '邀請你來測試';
+    }
+
+    .question1_bg {
+        width: 100%;
+        padding-top: 161.33%;
+        background-size: cover;
     }
 }
 

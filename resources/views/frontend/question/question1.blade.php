@@ -3,11 +3,11 @@
 @section('title')
 
 @section('body')
-    <div class="container home_bg">
+    <div class="container question1_bg">
         <div class="row">
             <div class="col-sm-12">
                 <div class="center" style="position: absolute;width: 200px;bottom:50px;left: 50%;margin-left: -100px;">
-                    <input type="radio"><p class="text-center">每天都要玩的，我都訂好了</p>
+                    <input type="radio" style="display: inline"><p class="text-center">每天都要玩的，我都訂好了</p>
                     <a class="btn btn-primary center-block" href="#">下一題</a>
                 </div>
             </div>
