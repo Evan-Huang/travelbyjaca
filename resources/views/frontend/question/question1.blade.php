@@ -6,7 +6,7 @@
     <div class="container question1_bg">
         <div class="row">
             <div class="col-sm-12">
-                <div class="center" style="position: absolute;width: 250px;bottom:180px;left: 50%;margin-left: -125px;">
+                <div class="center" style="position: absolute;width: 250px;bottom:200px;left: 50%;margin-left: -125px;">
                     <div class="item">
                         <input name="answer" type="radio" style="display: inline" class="pull-left"><p class="" style="padding-left: 20px;">每天都要玩的，我都訂好了</p>
                     </div>
