@@ -33,4 +33,12 @@ class HomeController extends Controller
             return view('frontend.question.question' . $request->input('num'))->with('user',$user)->with('js',$js);
         }
     }
+
+    public function testquestion1() {
+        return view('frontend.question.question1');
+    }
+
+    public function testquestion2() {
+        return view('frontend.question.question2');
+    }
 }

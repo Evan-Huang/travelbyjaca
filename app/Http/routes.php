@@ -30,3 +30,6 @@ Route::group(['middleware' => ['web', 'wechat.oauth']], function () {
     Route::any('/question', 'HomeController@question');
 
 });
+
+Route::any('/testquestion1', 'HomeController@testquestion1');
+Route::any('/testquestion2', 'HomeController@testquestion2');
