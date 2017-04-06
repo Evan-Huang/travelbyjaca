@@ -25,8 +25,12 @@ class HomeController extends Controller
 
     public function question(Request $request)
     {
+        $user = session('wechat.oauth_user');
+        $wechat = app('wechat');
+        $js = $wechat->js;
+
         if ($request->method() == 'GET' && $request->input('num')) {
-            return view('frontend.question.question' . $request->input('num'));
+            return view('frontend.question.question' . $request->input('num'))->with('user',$user)->with('js',$js);
         }
     }
 }

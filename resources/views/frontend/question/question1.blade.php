@@ -7,9 +7,8 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="center" style="position: absolute;width: 200px;bottom:50px;left: 50%;margin-left: -100px;">
-                    <p class="text-center fromuser">{{ isset($fromuser) ? $fromuser : '' }}</p>
-                    <p class="text-center">你們到底適不適合一起旅行</p>
-                    <a class="btn btn-primary center-block" href="#">設置我的旅行偏好</a>
+                    <input type="radio"><p class="text-center">每天都要玩的，我都訂好了</p>
+                    <a class="btn btn-primary center-block" href="#">下一題</a>
                 </div>
             </div>
         </div>
@@ -20,7 +19,6 @@
     <script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8">
         wx.config(<?php echo $js->config(array('onMenuShareAppMessage','onMenuShareTimeline','onMenuShareQQ', 'onMenuShareWeibo'), false) ?>);
-        var fromuser = $('.fromuser').val();
         var sharepath = window.location.host+'/home/?fromuser='+ '<?php echo $user->getNickname() ?>';
 //        alert(sharepath);
         var imgurl = '<?php echo $user->getAvatar() ?>';
