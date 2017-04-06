@@ -7,9 +7,9 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="center" style="position: absolute;width: 200px;bottom:50px;left: 50%;margin-left: -100px;">
-                    <p class="text-center fromuser">{{ isset($fromuser) ? $fromuser : '' }}</p>
+                    <p class="text-center fromuser" style="color: #f5e79e">{{ isset($fromuser) ? $fromuser : '' }}</p>
                     <p class="text-center">你們到底適不適合一起旅行</p>
-                    <a class="btn btn-primary center-block" href="{{ url('/question?num=1') }}">設置我的旅行偏好</a>
+                    <a class="btn center-block" style="background-color: #563907;border-color: #563907;color: #f1ca88;margin-top: 20px;" href="{{ url('/question?num=1') }}">設置我的旅行偏好</a>
                 </div>
             </div>
         </div>
