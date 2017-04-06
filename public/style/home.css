@@ -31,6 +31,14 @@
     background-repeat: no-repeat;
 }
 
+.items {
+    position: absolute;
+    width: 280px;
+    bottom:200px;
+    left: 50%;
+    margin-left: -140px;
+}
+
 .item {
     padding-top: 10px;
     border-bottom: 1px solid #563907;
@@ -92,9 +100,11 @@
     }
 }
 
-@media screen and (max-width:320px){
-    .home_bg{
-        padding-top:220px;
-        background-size: cover;
+@media screen and (max-width:376px){
+    .items {
+        width: 252px;
+        bottom:180px;
+        left: 50%;
+        margin-left: -126px;
     }
 }
